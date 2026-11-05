@@ -20,6 +20,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'D:\xampp\htdocs\wordpress\wp-content\plugins\wp-super-cache/' );
 define( 'DB_NAME', 'word_press' );
 
 /** Database username */
@@ -88,7 +90,7 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
-
+define( 'DISALLOW_FILE_EDIT', true );
 
 
 /* That's all, stop editing! Happy publishing. */
